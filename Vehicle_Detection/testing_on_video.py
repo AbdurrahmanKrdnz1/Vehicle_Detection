@@ -53,6 +53,6 @@ while video.isOpened():
     # Write out video
     out.write(frame)
 
-    # Release resources after video is over
+# Release resources after video is over
 video.release()
 out.release()
