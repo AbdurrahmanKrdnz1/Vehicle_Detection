@@ -3,5 +3,9 @@ import ultralytics
 from ultralytics import YOLO
 
 model_best_weights = YOLO(r"C:\Users\abdur\Desktop\Vehicle_Detection\runs\detect\train\weights\best.pt")
+
+metrics = model_best_weights.val()
+
+metrics.box.maps
     
 
